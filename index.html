@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>ANAND'S CALCULATOR</h1>
+    <div class="calculator">
+        <input id="display" type="text" disabled>
+        <div class="buttons">
+            <button class="bt" onclick="addtodisplay(7)">7</button>
+            <button class="bt" onclick="addtodisplay(8)">8</button>
+            <button class="bt" onclick="addtodisplay(9)">9</button>
+            <button class="bt" onclick="backspace()"><i class="fa-solid fa-delete-left" style="color: #ffffff;"
+                    id="back"></i></button>
+            <br>
+            <button class="bt" onclick="addtodisplay(4)">4</button>
+            <button class="bt" onclick="addtodisplay(5)">5</button>
+            <button class="bt" onclick="addtodisplay(6)">6</button>
+            <button class="bt" onclick="addtodisplay('*')">x</button>
+            <br>
+            <button class="bt" onclick="addtodisplay(1)">1</button>
+            <button class="bt" onclick="addtodisplay(2)">2</button>
+            <button class="bt" onclick="addtodisplay(3)">3</button>
+            <button class="bt" onclick="addtodisplay('-')">-</button>
+            <br>
+            <button class="bt" onclick="addtodisplay(0)">0</button>
+            <button class="bt" onclick="addtodisplay('+')">+</button>
+            <button class="bt" onclick="addtodisplay('.')">.</button>
+            <button class="bt" onclick="addtodisplay('/')">/</button>
+
+            <br>
+            <button class="bt" onclick="addtodisplay('(')">(</button>
+            <button class="bt" onclick="addtodisplay(')')">)</button>
+            <button class="bt" onclick="clearscreen()">C</button>
+            <button class="bt" id="equal" onclick="calculate()">=</button>
+        </div>
+
+    </div>
+
+    <div class="contanct">
+        <div><i class="fa-brands fa-linkedin fa-bounce" style="color: #ffffff;"></i> <a
+                href="https://www.linkedin.com/in/ananddangi/" target="_blank" class="link">Linkedin</a></div>
+        <div><i class="fa-brands fa-github fa-bounce" style="color: #ffffff;"></i><a
+                href="https://github.com/ananddangii20" target="_blank" class="link"> Github</a>
+        </div>
+        <div><i class="fa-brands fa-x-twitter fa-bounce" style="color: #ffffff;"></i><a
+                href="https://x.com/_ananddangi_" target="_blank" class="link"> X.com</a>
+        </div>
+    </div>
+
+    <script src="/calculator/script.js"></script>
+</body>
+
+</html>
